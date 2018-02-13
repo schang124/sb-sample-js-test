@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Route } from 'react-router-dom';
+import { Login, Chat } from '../components'
 import styled from 'styled-components';
 
 class Main extends Component {
@@ -11,8 +13,17 @@ class Main extends Component {
 	}
 
 	render() {
-		return <div>Main</div>
+		return (
+			<Chat>
+				<Route exact path='/' component={Login} />
+				<Route path='/chat' component={Chat} />
+			</Chat>
+		);
 	}
 }
 
 export default Main
+
+const MainBoard = styled.div`
+	position: relative;
+`;

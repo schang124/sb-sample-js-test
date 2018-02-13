@@ -7,7 +7,7 @@ export default () => injectGlobal`
     ${reset}
     
     body {
-        background-color: #4564b6;
+        background-color: #695BCC;
         font-family: 'Spoqa Han Sans', sans-serif;
     }
     
@@ -15,16 +15,8 @@ export default () => injectGlobal`
         font-style: normal;
     }
     
-    .w250 {
-        font-weight: 250;
-    }
-    
     .w300 {
         font-weight: 300;
-    }
-    
-    .w350 {
-        font-weight: 350;
     }
     
     .w400 {
