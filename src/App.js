@@ -22,6 +22,5 @@ class App extends Component {
 export default App;
 
 const SendBird = styled.div`
-  overflow-x: hidden;
   margin: auto;
 `;
